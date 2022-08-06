@@ -1,3 +1,5 @@
+Uses NodeJS wrapper for the Spotify API: https://github.com/thelinmichael/spotify-web-api-node
+
 # SpotifyRecsAlternative
 Alternative to Spotify Discover Weekly
 

@@ -75,8 +75,8 @@ async function generateNewPlaylist(){
     console.log("seeding")
     var seedArtists = []
     var seedTracks = []
-    var seedGenres = []
-    var checkedAlbums = []
+    // var seedGenres = []
+    // var checkedAlbums = []
     var limit = TRACK_LIMIT_ADD;
     var offset = 0;
     do{
@@ -103,6 +103,7 @@ async function generateNewPlaylist(){
     return [seedArtists,seedTracks]
   }
   
+  //Sort Object Function: src = https://stackoverflow.com/questions/5467129/sort-javascript-object-by-key
   function sort_object(obj) {
     console.log("sorting")
     var items = Object.keys(obj).map(
@@ -234,4 +235,5 @@ async function emptyPlaylist(playlistID,limit,offset){
         }
   });
   }
+  
 module.exports = {emptyPlaylist,eliminateOldTracks,getSeedValues,sort_object,addToSavedTracks,generateNewPlaylist,initPlaylists}
