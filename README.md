@@ -9,6 +9,8 @@ For this to work we'll need to do some preparation first. If, however, you are a
 The API can only perform checks on your saved or 'liked' tracks, so if we want the playlist to be mostly unique we'll need to adapt to that. 
 
 First off, set up an application via the Spotify Developer Dashboard. You'll need the client id and secret to use later on. Also set a redirect uri like so: your_domain/returncode
+Also don't forget to run npm install from a terminal in the project root, so you've got all the necessary node modules. 
+The Node server can be started by running "node app.js" in project root.
 
 ## Authorization
 
